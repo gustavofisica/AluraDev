@@ -7,6 +7,7 @@ css_dir = "assets/css"
 sass_dir = "assets/css"
 images_dir = "assets/img"
 javascripts_dir = "assets/js"
+http_path = "../"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -15,7 +16,7 @@ javascripts_dir = "assets/js"
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this

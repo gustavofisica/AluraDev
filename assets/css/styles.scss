@@ -1,3 +1,13 @@
-header{
-    background-color: black;
-}
+ // Compass
+ @import "compass/css3";
+ @import "compass/utilities";
+ 
+ // Variáveis e Mixins do Sass
+ @import 'helpers/variaveis';
+ @import 'helpers/mixins';
+ 
+ // Import dos Estilos da Página
+ @import "compass/reset-legacy";
+ @import 'layout/header';
+ @import 'layout/main';
+ @import 'layout/footer';
