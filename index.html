@@ -51,8 +51,7 @@
                 <section class="main__container__central" id="central">
                     <form class="main__container__central__form__code" id="form-code" action="">
                         <div class="main__container__central__form__code__area__color" id="code-area-color">
-                            <textarea class="main__container__central__form__code__area__text" id="code-text"
-                                disabled="disabled">
+                            <textarea class="main__container__central__form__code__area__text" id="code-text">
                                 const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                                 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -75,31 +74,37 @@
                     </form>
                 </section>
                 <section class="main__container__right" id="right">
-                    <h3>Seu Projeto</h3>
-                    <form action="">
-                        <input type="text">
-                        <textarea>
-
-                        </textarea>
-                    </form>
-                    <h3>Personalização</h3>
-                    <form action="">
-                        <select name="" id="">
-                            <option value="">JavaScript</option>
-                            <option value="">HTML5</option>
-                            <option value="">CSS</option>
-                            <option value="">Python</option>
-                        </select>
-                        <input type="color">
-                    </form>
+                    <div class="main__container__right__project" id="project">
+                        <h3 class="main__container__right__project__title" id="project-title">Seu Projeto</h3>
+                        <form class="main__container__right__project__form" id="project-form" action="">
+                            <input class="main__container__right__project__form__name" id="project-name" type="text"
+                                placeholder="Nome do seu projeto">
+                            <textarea class="main__container__right__project__form__description"
+                                id="project-description" placeholder="Descrição do seu projeto"></textarea>
+                        </form>
+                    </div>
+                    <div class="main__container__right__customize" id="customize">
+                        <h3 class="main__container__right__customize__title" id="customize-title">Personalização</h3>
+                        <form class="main__container__right__customize__form" id="customize-form" action="">
+                            <select class="main__container__right__customize__form__code__types"
+                                id="customize-code-types" name="" id="">
+                                <option class="main__container__right__customize__form__code__types__option"
+                                    id="code-types-option-1" value="">JavaScript</option>
+                                <option class="main__container__right__customize__form__code__types__option"
+                                    id="code-types-option-2" value="">HTML</option>
+                                <option class="main__container__right__customize__form__code__types__option"
+                                    id="code-types-option-3" value="">CSS</option>
+                            </select>
+                            <div class="main__container__right__customize__form__colors__border"
+                                id="customize-color-border">
+                                <div class="main__container__right__customize__form__colors" id="customize-color"></div>
+                            </div>
+                            <button class="main__container__right__customize__form__code__types" id="customize-code-types">Salvar projeto</button>
+                        </form>
+                    </div>
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="footer__container">
-                <p>Desenvolivdo por Luis Gustavo de Matos dos Santos</p>
-            </div>
-        </footer>
     </div>
 </body>
 

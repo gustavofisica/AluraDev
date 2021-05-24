@@ -2,19 +2,15 @@
     grid-area: main__container;
     display: grid;
     grid-template-columns: 20% 27.5% 27.5% 25%;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
 }
 
 .main__container__menu {
     grid-column: 1/2;
-    grid-row: 1/2;
 }
 
-h3 {
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.4em;
-    color: #FFFFFF;
+#menu-title {
+    margin-bottom: 0;
 }
 
 .main__container__menu__list {
@@ -46,7 +42,6 @@ h3 {
 
 .main__container__central {
     grid-column: 2/4;
-    grid-row: 1/2;
 }
 
 .main__container__central__form__code__points {
@@ -55,7 +50,7 @@ h3 {
     position: absolute;
     top: 48px;
     left: 48px;
-    
+
 
     .main__container__central__form__code__points__point {
         height: 12px;
@@ -64,16 +59,16 @@ h3 {
     }
 }
 
-#point-red{
+#point-red {
     background-color: #FF5F56;
 }
 
-#point-yellow{
+#point-yellow {
     background-color: #FFBD2E;
     margin-left: 8px;
 }
 
-#point-green{
+#point-green {
     background-color: #27C93F;
     margin-left: 8px;
 }
@@ -85,7 +80,7 @@ h3 {
     height: 366px;
 }
 
-.main__container__central__form__code{
+.main__container__central__form__code {
     position: relative;
 }
 
@@ -100,22 +95,48 @@ h3 {
     padding: 56px 16px 16px 16px;
 }
 
-.main__container__central__form__code__area__btn {
-    width: 100%;
-    margin-top: 32px;
-    background: rgba(80, 129, 251, 0.08);
-    border-radius: 8px;
-    height: 56px;
-    border: none;
-    color: white;
-    cursor: pointer;
-
-    &:hover {
-        background: #5081FB;
-    }
-}
-
 .main__container__right {
     grid-column: 4/4;
     padding-left: 40px;
+}
+
+.main__container__right__project__form__name {
+    height: 56px;
+    width: calc(100% - 16px);
+}
+
+.main__container__right__project__form__description {
+    resize: none;
+    height: 64px;
+    width: calc(100% - 16px);
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.main__container__right__customize {
+    margin-top: 40px;
+}
+
+.main__container__right__customize__form__code__types {
+    height: 56px;
+}
+
+.main__container__right__customize__form__code__types__option {
+    background-color: $box-color;
+}
+
+.main__container__right__customize__form__colors__border {
+    height: 56px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+.main__container__right__customize__form__colors {
+    border-radius: 4px;
+    background-color: #6BD1FF;
+    height: 40px;
+    margin: 8px;
+    cursor: pointer;
 }
