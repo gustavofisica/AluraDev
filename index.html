@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>AluraDev</title>
 </head>
+
 <body>
     <div class="box">
         <header>
@@ -27,14 +29,78 @@
         </header>
         <main>
             <div class="main__container">
-                <h3>Main</h3>
+                <nav class="main__container__menu" id="menu">
+                    <h3 class="main__container__menu__title" id="menu-title">Menu</h3>
+                    <ul class="main__container__menu__list" id="menu-list">
+                        <li class="main__container__menu__list__item" id="menu-list-item-1">
+                            <a class="main__container__menu__list__item__link" id="link-1" href="index.html"><span
+                                    class="main__container__menu__list__item__link__icon"><i
+                                        class="fa fa-code"></i></span><span
+                                    class="main__container__menu__list__item__link__text" id="link-text-1">Editor de
+                                    código</span></a>
+                        </li>
+                        <li class="main__container__menu__list__item" id="menu-list-item-2">
+                            <a class="main__container__menu__list__item__link" id="link-2" href="community.html"><span
+                                    class="main__container__menu__list__item__link__icon"><i
+                                        class="fa fa-users"></i></span><span
+                                    class="main__container__menu__list__item__link__text"
+                                    id="link-text-2">Comunidade</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="main__container__central" id="central">
+                    <form class="main__container__central__form__code" id="form-code" action="">
+                        <div class="main__container__central__form__code__area__color" id="code-area-color">
+                            <textarea class="main__container__central__form__code__area__text" id="code-text"
+                                disabled="disabled">
+                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                const unfold = (f, seed) => {
+                                const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                }
+                                return go(f, seed, [])
+                            </textarea>
+                        </div>
+                        <button class="main__container__central__form__code__area__btn" id="form-code-btn">Visualizar
+                            com highlight</button>
+                        <div class="main__container__central__form__code__points" id="code-points">
+                            <div class="main__container__central__form__code__points__point" id="point-red"></div>
+                            <div class="main__container__central__form__code__points__point" id="point-yellow"></div>
+                            <div class="main__container__central__form__code__points__point" id="point-green"></div>
+                        </div>
+                    </form>
+                </section>
+                <section class="main__container__right" id="right">
+                    <h3>Seu Projeto</h3>
+                    <form action="">
+                        <input type="text">
+                        <textarea>
+
+                        </textarea>
+                    </form>
+                    <h3>Personalização</h3>
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">JavaScript</option>
+                            <option value="">HTML5</option>
+                            <option value="">CSS</option>
+                            <option value="">Python</option>
+                        </select>
+                        <input type="color">
+                    </form>
+                </section>
             </div>
         </main>
         <footer>
             <div class="footer__container">
-                <h3>Main</h3>
+                <p>Desenvolivdo por Luis Gustavo de Matos dos Santos</p>
             </div>
         </footer>
     </div>
 </body>
+
 </html>

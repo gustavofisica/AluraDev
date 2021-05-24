@@ -1,4 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,35 +63,70 @@ body {
   display: grid;
   grid-template-areas: "header__container" "main__container" "footer__container";
   grid-template-columns: auto;
-  grid-template-rows: 56px auto auto;
+  grid-template-rows: 56px calc(100vh - 56px) 56px;
+  row-gap: 40px;
 }
 
-.header__container {
-  grid-area: header__container;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 56px;
-}
-
-.header__container__logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  align-self: center;
-}
-
-.header__container__search {
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
-.header__container__search__input {
-  width: 100%;
-  height: 100%;
+input,
+textarea,
+select,
+option {
   padding-left: 14px;
   background: rgba(255, 255, 255, 0.16);
   border-radius: 8px;
   border: none;
   color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+:-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.56;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.header__container {
+  grid-area: header__container;
+  display: grid;
+  grid-template-columns: 20% 27.5% 27.5% 25%;
+  grid-template-rows: 56px;
+}
+
+.header__container__logo {
+  grid-column: 1/2;
+  align-self: center;
+}
+
+.header__container__search {
+  grid-column: 2/4;
 }
 
 .header__container__search__btn {
@@ -100,8 +134,7 @@ body {
 }
 
 .header__container__profile {
-  grid-column-start: 4;
-  grid-column-end: 4;
+  grid-column: 4/4;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -113,10 +146,123 @@ body {
   margin-right: 16px;
 }
 
-.main__container {
-  grid-area: main__container;
-}
-
 .footer__container {
   grid-area: footer__container;
+}
+
+.main__container {
+  grid-area: main__container;
+  display: grid;
+  grid-template-columns: 20% 27.5% 27.5% 25%;
+  grid-template-rows: auto auto;
+}
+
+.main__container__menu {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+}
+
+.main__container__menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container__menu__list__item__link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-top: 16px;
+}
+
+.main__container__menu__list__item__link__icon {
+  height: 48px;
+  width: 48px;
+  background: rgba(80, 129, 251, 0.16);
+  border-radius: 16px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__container__menu__list__item__link__icon:hover {
+  background: #5081FB;
+}
+
+.main__container__central {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.main__container__central__form__code__points {
+  display: flex;
+  position: absolute;
+  top: 48px;
+  left: 48px;
+}
+.main__container__central__form__code__points .main__container__central__form__code__points__point {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+}
+
+#point-red {
+  background-color: #FF5F56;
+}
+
+#point-yellow {
+  background-color: #FFBD2E;
+  margin-left: 8px;
+}
+
+#point-green {
+  background-color: #27C93F;
+  margin-left: 8px;
+}
+
+.main__container__central__form__code__area__color {
+  background: #6BD1FF;
+  border-radius: 8px;
+  padding: 32px;
+  height: 366px;
+}
+
+.main__container__central__form__code {
+  position: relative;
+}
+
+.main__container__central__form__code__area__text {
+  resize: none;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  color: white;
+  background: #141414;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  padding: 56px 16px 16px 16px;
+}
+
+.main__container__central__form__code__area__btn {
+  width: 100%;
+  margin-top: 32px;
+  background: rgba(80, 129, 251, 0.08);
+  border-radius: 8px;
+  height: 56px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.main__container__central__form__code__area__btn:hover {
+  background: #5081FB;
+}
+
+.main__container__right {
+  grid-column: 4/4;
+  padding-left: 40px;
 }
