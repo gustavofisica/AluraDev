@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AluraDev</title>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <div class="header__container">
+                <img class="header__container__logo" id="logo" src="assets/img/Header/Logo.svg" alt="Logo AluraDev">
+                <form class="header__container__search" id="search" action="">
+                    <input class="header__container__search__input" id="input-search" type="search" name="search"
+                        placeholder="Busque por algo">
+                    <button class="header__container__search__btn" id="btn-search">Pesquisar</button>
+                </form>
+                <div class="header__container__profile" id="profile">
+                    <img class="header__container__profile__image" id="profile-image"
+                        src="assets/img/Header/Perfil/Photo.png" alt="Foto de Perfil">
+                    <h2 class="header__container__profile__name" id="profile-name">Harry</h2>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main__container">
+                <nav class="main__container__menu" id="menu">
+                    <h3 class="main__container__menu__title" id="menu-title">Menu</h3>
+                    <ul class="main__container__menu__list" id="menu-list">
+                        <li class="main__container__menu__list__item" id="menu-list-item-1">
+                            <a class="main__container__menu__list__item__link" id="link-1" href="index.html"><span
+                                    class="main__container__menu__list__item__link__icon"><i
+                                        class="fa fa-code"></i></span><span
+                                    class="main__container__menu__list__item__link__text" id="link-text-1">Editor de
+                                    código</span></a>
+                        </li>
+                        <li class="main__container__menu__list__item" id="menu-list-item-2">
+                            <a class="main__container__menu__list__item__link" id="link-2" href="community.html"><span
+                                    class="main__container__menu__list__item__link__icon"><i
+                                        class="fa fa-users"></i></span><span
+                                    class="main__container__menu__list__item__link__text"
+                                    id="link-text-2">Comunidade</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="main__container__community" id="community">
+                    <div class="main__container__community__description" id="community-description">
+                        <form class="main__container__central__form__code" id="form-code" action="">
+                            <div class="main__container__central__form__code__area__color" id="code-area-color">
+                                <textarea class="main__container__central__form__code__area__text" id="code-text">
+                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                const unfold = (f, seed) => {
+                                const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                }
+                                return go(f, seed, [])</textarea>
+                            </div>
+                            <div class="main__container__central__form__code__points" id="code-points">
+                                <div class="main__container__central__form__code__points__point" id="point-red"></div>
+                                <div class="main__container__central__form__code__points__point" id="point-yellow">
+                                </div>
+                                <div class="main__container__central__form__code__points__point" id="point-green"></div>
+                            </div>
+                        </form>
+                        <div class="main__container__community__description__project"
+                            id="community-description-participation">
+                            <h4 class="main__container__community__description__project__title"
+                                id="community-description-title">
+                                Título do projeto
+                            </h4>
+                            <p class="main__container__community__description__project__text"
+                                id="community-description-text">
+                                Essa é a descrição do meu projeto</p>
+                        </div>
+                        <div class="main__container__community__description__participation"
+                            id="community-description-participation">
+                            <div class="main__container__community__description__participation__public"
+                                id="participation-public">
+                                <i class="fa fa-comment" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__comments"
+                                    id="participation-comments">9</span>
+                                <i class="fa fa-heart" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__likes"
+                                    id="participation-likes">9</span>
+                            </div>
+                            <div class="header__container__profile" id="profile">
+                                <img class="header__container__profile__image" id="profile-image"
+                                    src="assets/img/Header/Perfil/Photo.png" alt="Foto de Perfil">
+                                <h2 class="header__container__profile__name" id="profile-name">@Harry</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container__community__description" id="community-description">
+                        <form class="main__container__central__form__code" id="form-code" action="">
+                            <div class="main__container__central__form__code__area__color" id="code-area-color">
+                                <textarea class="main__container__central__form__code__area__text" id="code-text">
+                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                const unfold = (f, seed) => {
+                                const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                }
+                                return go(f, seed, [])</textarea>
+                            </div>
+                            <div class="main__container__central__form__code__points" id="code-points">
+                                <div class="main__container__central__form__code__points__point" id="point-red"></div>
+                                <div class="main__container__central__form__code__points__point" id="point-yellow">
+                                </div>
+                                <div class="main__container__central__form__code__points__point" id="point-green"></div>
+                            </div>
+                        </form>
+                        <div class="main__container__community__description__project"
+                            id="community-description-participation">
+                            <h4 class="main__container__community__description__project__title"
+                                id="community-description-title">
+                                Título do projeto
+                            </h4>
+                            <p class="main__container__community__description__project__text"
+                                id="community-description-text">
+                                Essa é a descrição do meu projeto</p>
+                        </div>
+                        <div class="main__container__community__description__participation"
+                            id="community-description-participation">
+                            <div class="main__container__community__description__participation__public"
+                                id="participation-public">
+                                <i class="fa fa-comment" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__comments"
+                                    id="participation-comments">9</span>
+                                <i class="fa fa-heart" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__likes"
+                                    id="participation-likes">9</span>
+                            </div>
+                            <div class="header__container__profile" id="profile">
+                                <img class="header__container__profile__image" id="profile-image"
+                                    src="assets/img/Header/Perfil/Photo.png" alt="Foto de Perfil">
+                                <h2 class="header__container__profile__name" id="profile-name">@Harry</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container__community__description" id="community-description">
+                        <form class="main__container__central__form__code" id="form-code" action="">
+                            <div class="main__container__central__form__code__area__color" id="code-area-color">
+                                <textarea class="main__container__central__form__code__area__text" id="code-text">
+                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                const unfold = (f, seed) => {
+                                const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                }
+                                return go(f, seed, [])</textarea>
+                            </div>
+                            <div class="main__container__central__form__code__points" id="code-points">
+                                <div class="main__container__central__form__code__points__point" id="point-red"></div>
+                                <div class="main__container__central__form__code__points__point" id="point-yellow">
+                                </div>
+                                <div class="main__container__central__form__code__points__point" id="point-green"></div>
+                            </div>
+                        </form>
+                        <div class="main__container__community__description__project"
+                            id="community-description-participation">
+                            <h4 class="main__container__community__description__project__title"
+                                id="community-description-title">
+                                Título do projeto
+                            </h4>
+                            <p class="main__container__community__description__project__text"
+                                id="community-description-text">
+                                Essa é a descrição do meu projeto</p>
+                        </div>
+                        <div class="main__container__community__description__participation"
+                            id="community-description-participation">
+                            <div class="main__container__community__description__participation__public"
+                                id="participation-public">
+                                <i class="fa fa-comment" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__comments"
+                                    id="participation-comments">9</span>
+                                <i class="fa fa-heart" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__likes"
+                                    id="participation-likes">9</span>
+                            </div>
+                            <div class="header__container__profile" id="profile">
+                                <img class="header__container__profile__image" id="profile-image"
+                                    src="assets/img/Header/Perfil/Photo.png" alt="Foto de Perfil">
+                                <h2 class="header__container__profile__name" id="profile-name">@Harry</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container__community__description" id="community-description">
+                        <form class="main__container__central__form__code" id="form-code" action="">
+                            <div class="main__container__central__form__code__area__color" id="code-area-color">
+                                <textarea class="main__container__central__form__code__area__text" id="code-text">
+                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                const unfold = (f, seed) => {
+                                const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                }
+                                return go(f, seed, [])</textarea>
+                            </div>
+                            <div class="main__container__central__form__code__points" id="code-points">
+                                <div class="main__container__central__form__code__points__point" id="point-red"></div>
+                                <div class="main__container__central__form__code__points__point" id="point-yellow">
+                                </div>
+                                <div class="main__container__central__form__code__points__point" id="point-green"></div>
+                            </div>
+                        </form>
+                        <div class="main__container__community__description__project"
+                            id="community-description-participation">
+                            <h4 class="main__container__community__description__project__title"
+                                id="community-description-title">
+                                Título do projeto
+                            </h4>
+                            <p class="main__container__community__description__project__text"
+                                id="community-description-text">
+                                Essa é a descrição do meu projeto</p>
+                        </div>
+                        <div class="main__container__community__description__participation"
+                            id="community-description-participation">
+                            <div class="main__container__community__description__participation__public"
+                                id="participation-public">
+                                <i class="fa fa-comment" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__comments"
+                                    id="participation-comments">9</span>
+                                <i class="fa fa-heart" aria-hidden="true"></i><span
+                                    class="main__container__community__description__participation__likes"
+                                    id="participation-likes">9</span>
+                            </div>
+                            <div class="header__container__profile" id="profile">
+                                <img class="header__container__profile__image" id="profile-image"
+                                    src="assets/img/Header/Perfil/Photo.png" alt="Foto de Perfil">
+                                <h2 class="header__container__profile__name" id="profile-name">@Harry</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="./assets/js/stlyles.js"></script>
+
+</html>

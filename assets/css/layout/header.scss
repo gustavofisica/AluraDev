@@ -1,13 +1,13 @@
 .header__container {
-    grid-area: header__container;
     display: grid;
+    grid-area: header__container;
     grid-template-columns: 20% 27.5% 27.5% 25%;
     grid-template-rows: 56px;
 }
 
 .header__container__logo {
-    grid-column: 1/2;
     align-self: center;
+    grid-column: 1/2;
 }
 
 .header__container__search {
@@ -19,21 +19,14 @@
 }
 
 .header__container__profile {
-    grid-column: 4/4;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    display: flex;
+    grid-column: 4/4;
+    justify-content: flex-end;
 }
 
 .header__container__profile__name {
     color: #FFFFFF;
     margin-left: 8px;
     margin-right: 16px;
-}
-
-
-
-
-.footer__container {
-    grid-area: footer__container;
 }
