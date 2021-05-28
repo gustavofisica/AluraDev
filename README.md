@@ -7,11 +7,11 @@ Logo na primeira página, você encontra um fabuloso espaço para incluir seus c
 
 Veja como é:
 
-[Screenshot](AluraDev Edit.png)
+(AluraDev Edit.png)
 
 Inserido o código, basta selecionar a linguagem desejada e fazer a pré-visualização com o highlight:
 
-[Screenshot](AluraDev Preview.png)
+(AluraDev Preview.png)
 
 Essa foi a primera fase do projeto. 
 Agora estamos desenvolendo um método para guardar os seus códigos no link de comunidade.
