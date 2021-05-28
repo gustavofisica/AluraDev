@@ -18,9 +18,9 @@
     flex-direction: column;
 }
 
-.main__container__menu__list__item{
-    &:hover{
-        .main__container__menu__list__item__link__icon{
+.main__container__menu__list__item {
+    &:hover {
+        .main__container__menu__list__item__link__icon {
             background-color: #5081FB;
         }
     }
@@ -89,13 +89,20 @@
 
 .main__container__central__form__code__area__text {
     background: #141414;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-    color: white;
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
     padding: 56px 16px 16px 16px;
-    resize: none;
+
+    #code-text-textarea {
+        display: block;
+        background-color: transparent;
+        height: 26.5vh;
+        width: -webkit-fill-available;
+        color: white;
+        resize: none;
+        background-color: none;
+    }
 }
 
 .main__container__right {
@@ -192,8 +199,8 @@
     }
 }
 
-.main__container__community__description__participation__public{
-    span{
+.main__container__community__description__participation__public {
+    span {
         margin-left: 10px;
     }
 }

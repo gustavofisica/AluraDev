@@ -256,13 +256,19 @@ button:hover {
 
 .main__container__central__form__code__area__text {
   background: #141414;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-  color: white;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
   padding: 56px 16px 16px 16px;
+}
+.main__container__central__form__code__area__text #code-text-textarea {
+  display: block;
+  background-color: transparent;
+  height: 26.5vh;
+  width: -webkit-fill-available;
+  color: white;
   resize: none;
+  background-color: none;
 }
 
 .main__container__right {

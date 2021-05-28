@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/hightlights/monokai.css"/>
+    <script src="assets/js/highlight.pack.js"></script>
     <title>AluraDev</title>
 </head>
 
@@ -51,19 +53,14 @@
                     </ul>
                 </nav>
                 <section class="main__container__central" id="central">
-                    <form class="main__container__central__form__code" id="form-code" action="">
+                    <form class="main__container__central__form__code" id="form-code">
                         <div class="main__container__central__form__code__area__color" id="code-area-color">
-                            <textarea class="main__container__central__form__code__area__text" id="code-text">
-                                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-                                const unfold = (f, seed) => {
-                                const go = (f, seed, acc) => {
-                                    const res = f(seed)
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                                }
-                                return go(f, seed, [])</textarea>
+                            <div class="main__container__central__form__code__area__text" id="code-text">
+                                <textarea class="main__container__central__form__code__area__text_textarea" id="code-text-textarea"></textarea>
+                                <pre>
+                                    <code class="" id="code-text-highlight"></code>
+                                </pre>
+                            </div>                            
                         </div>
                         <button class="main__container__central__form__code__area__btn" id="form-code-btn">Visualizar
                             com highlight</button>
@@ -90,24 +87,26 @@
                             <select class="main__container__right__customize__form__code__types"
                                 id="customize-code-types" name="" id="">
                                 <option class="main__container__right__customize__form__code__types__option"
-                                    id="code-types-option-1" value="">JavaScript</option>
+                                    id="code-types-option-1" value="javascript">JavaScript</option>
                                 <option class="main__container__right__customize__form__code__types__option"
-                                    id="code-types-option-2" value="">HTML</option>
+                                    id="code-types-option-2" value="language-xml">HTML</option>
                                 <option class="main__container__right__customize__form__code__types__option"
-                                    id="code-types-option-3" value="">CSS</option>
+                                    id="code-types-option-3" value="css">CSS</option>
                             </select>
                             <div class="main__container__right__customize__form__colors__border"
                                 id="customize-color-border">
                                 <div class="main__container__right__customize__form__colors" id="customize-color"></div>
                             </div>
-                            <button class="main__container__right__customize__form__code__types" id="customize-code-types">Salvar projeto</button>
+                            <button class="main__container__right__customize__form__code__types"
+                                id="customize-code-types">Salvar projeto</button>
                         </form>
                     </div>
                 </section>
             </div>
         </main>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="./assets/js/stlyles.js"></script>
 </body>
-<script src="./assets/js/stlyles.js"></script>
 
 </html>
