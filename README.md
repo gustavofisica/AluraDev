@@ -7,11 +7,11 @@ Logo na primeira página, você encontra um fabuloso espaço para incluir seus c
 
 Veja como é:
 
-(AluraDev Edit.png)
+![alt text](https://github.com/gustavofisica/AluraDev/blob/main/AluraDev%20Edit.png)
 
 Inserido o código, basta selecionar a linguagem desejada e fazer a pré-visualização com o highlight:
 
-(AluraDev Preview.png)
+![alt text](https://github.com/gustavofisica/AluraDev/blob/main/AluraDev%20Preview.png)
 
 Essa foi a primera fase do projeto. 
 Agora estamos desenvolendo um método para guardar os seus códigos no link de comunidade.
