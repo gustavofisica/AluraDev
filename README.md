@@ -1,5 +1,3 @@
-# AluraDev
-
 Bem vindo ao projeto AluraDev.
 
 Plataforma de edição e banco de códigos, criada no primeiro [Alura](https://www.alura.com.br/) Challenges | Front-end.
